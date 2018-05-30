@@ -17,6 +17,8 @@ npm run dev
 Without nodemon
 `npm start`
 
+GraphiQL: <http://localhost:3001/graphiql>
+
 ## Components
 
 Components are in folders under /components. Each folder would normally be responsible for a different entity (e.g. user)
@@ -32,6 +34,8 @@ Standard username / password authentication is included with the `user` componen
 A password can be specified on user creation and can also be reset to something random (to support a forgotten password process).
 
 Some of the `user` functions are secured (require a JWT) and others not (see the swagger docs). JWTs are returned from the authentication operation and expire after 12 hours.
+
+When testing through the GraphiQL interface, you can use the ModHeader chrome extension to add an `Authorization` header for accessing secured queries and mutations: `Bearer ${jwt}`
 
 ## Tests
 
