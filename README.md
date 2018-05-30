@@ -23,8 +23,8 @@ GraphiQL: <http://localhost:3001/graphiql>
 
 Components are in folders under /components. Each folder would normally be responsible for a different entity (e.g. user)
 
-1. A component folder has resolvers to find or update the data
-2. The schema subfolder describes the gql schemas
+1. A component folder has resolvers and typedefs
+2. Resolvers and typedefs from each component are added to the `root` resolvers and typedefs
 5. The sample `user` component has examples of creating, querying, retrieiving and deleting. It also provides some authentication support
 
 ## Authentication
